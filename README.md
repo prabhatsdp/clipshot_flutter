@@ -36,7 +36,7 @@ Until a release is published, depend on the repository:
 dependencies:
   clipshot:
     git:
-      url: https://github.com/prabhatsdp/clipshot.git
+      url: https://github.com/prabhatsdp/clipshot_flutter.git
       ref: 0.1.0
 ```
 
@@ -183,4 +183,4 @@ FFmpeg regeneration command is documented in `example/README.md`.
 - Cancellation exposed in the public Dart API
 
 Issues and contributions are welcome at
-[github.com/prabhatsdp/clipshot](https://github.com/prabhatsdp/clipshot).
+[github.com/prabhatsdp/clipshot_flutter](https://github.com/prabhatsdp/clipshot_flutter).

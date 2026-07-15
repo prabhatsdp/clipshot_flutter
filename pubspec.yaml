@@ -2,8 +2,8 @@ name: clipshot
 description: Extract still image frames from local video files on Android and iOS.
 version: 0.1.0
 homepage: https://prabhatpandey.com
-repository: https://github.com/prabhatsdp/clipshot
-issue_tracker: https://github.com/prabhatsdp/clipshot/issues
+repository: https://github.com/prabhatsdp/clipshot_flutter
+issue_tracker: https://github.com/prabhatsdp/clipshot_flutter/issues
 
 environment:
   sdk: ">=3.4.0 <4.0.0"
