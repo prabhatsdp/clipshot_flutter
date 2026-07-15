@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'clipshot'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Extract still image frames from local video files.'
   s.description      = <<-DESC
 Clipshot extracts JPEG or PNG thumbnail files from local videos on iOS.

@@ -1,12 +1,16 @@
+import com.android.build.api.dsl.LibraryExtension
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
+
 group = "com.prabhatpandey.clipshot"
-version = "0.1.0"
+version = "0.1.1"
 
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
 }
 
-android {
+extensions.configure<LibraryExtension> {
     namespace = "com.prabhatpandey.clipshot"
 
     compileSdk = 36
@@ -14,19 +18,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
-    }
-
-    sourceSets {
-        getByName("main") {
-            java.srcDirs("src/main/kotlin")
-        }
-        getByName("test") {
-            java.srcDirs("src/test/kotlin")
-        }
     }
 
     defaultConfig {
@@ -47,6 +38,12 @@ android {
                 }
             }
         }
+    }
+}
+
+extensions.configure<KotlinAndroidProjectExtension> {
+    compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_17)
     }
 }
 

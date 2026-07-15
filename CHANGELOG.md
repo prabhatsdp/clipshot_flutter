@@ -1,3 +1,9 @@
+## 0.1.1
+
+- Migrated the Android build to AGP 9-compatible public DSL APIs.
+- Migrated Kotlin JVM target configuration to the `compilerOptions` DSL.
+- Removed redundant legacy source-set configuration.
+
 ## 0.1.0
 
 - Initial release.
