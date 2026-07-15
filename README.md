@@ -37,7 +37,7 @@ dependencies:
   clipshot:
     git:
       url: https://github.com/prabhatsdp/clipshot_flutter.git
-      ref: 0.1.0
+      ref: v0.1.0
 ```
 
 Then run `flutter pub get`.
